@@ -31,8 +31,10 @@ string[] ArrayStr3(string[] stringArrayN)//формирует массив не 
 {
   int n = new Random().Next(4);//рандомный интервал длины массива: 0,1,2,3 или [0, 4) 
   string[] resultNew = new string[n];
-  if (resultNew.Length == 0)
+  if (resultNew.Length == 0) 
+  {
     return resultNew;
+  }
   else
   {
     for (int i = 0; i < resultNew.Length; i++)
